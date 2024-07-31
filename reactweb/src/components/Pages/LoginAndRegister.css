@@ -1,0 +1,94 @@
+.box{
+    background-color:transparent;
+    backdrop-filter: blur(8px);
+    border-width: 1px;
+    border-color: white;
+    border-style:solid;
+    border-radius: 40px;
+    padding: 50px 30px;
+    margin: 100px auto;
+    width: 300px;
+    
+}
+.main h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #80eafa;  
+}
+.main input{
+    background-color: transparent;
+    font-size: 15.5px;
+    color:white;
+    margin: 8px;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: white;
+    border-style:solid;
+    width: 80%;
+    padding: 10px;
+    margin-left: 10%;
+    outline: none;
+}
+.main input::placeholder{
+    color: #80eafa;
+    font-weight: 600;
+}
+
+.main button{
+    background-color: transparent;
+    color: #80eafa;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    border-width: 1px;
+    border-color: white;
+    border-style:solid;
+    border-radius: 30px;
+    padding: 8px;
+    width: 60%;
+    margin-top: 25px; 
+    margin-left: 20%;
+}
+.admin{
+    margin-right: 10px;
+}
+.main a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #80eafa;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.main a:hover{
+    color:rgb(3, 140, 145);
+}
+.main .regi{
+    margin-right: 100%;
+}
+h1{
+    color: white;
+    font-size: 56px;
+    font-weight:800;
+    padding-top:6%;
+    margin-left: 20px;
+}
+h2{
+    color: white;
+    font-size: 50px;
+    margin-left: 20%;
+    margin-top: -25px;
+    display: inline-block;
+} 
+.subimg1{
+    padding-top: 10%;
+}
+.IMG{
+    width: 24%;
+    height: 260px;
+    border-radius: 22px;
+    display: inline-block;
+    object-fit: cover;
+}
