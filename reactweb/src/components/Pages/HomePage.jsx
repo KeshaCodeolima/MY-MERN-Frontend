@@ -6,8 +6,7 @@ function HomePage(){
     return(
         <>
         <div>
-            <h1>WELCOME</h1>
-            <h2>SRI LANKA</h2>
+            <h1>WELCOME To Sri Lanka</h1>
         </div>
 
         <div className='subimg1'>
