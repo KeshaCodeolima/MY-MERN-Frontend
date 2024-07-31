@@ -1,0 +1,24 @@
+h1{
+    color: white;
+    font-size: 56px;
+    font-weight:800;
+    padding-top:6%;
+    margin-left: 20px;
+}
+h2{
+    color: white;
+    font-size: 50px;
+    margin-left: 20%;
+    margin-top: -25px;
+    display: inline-block;
+} 
+.subimg1{
+    padding-top: 10%;
+}
+.IMG{
+    width: 24%;
+    height: 260px;
+    border-radius: 22px;
+    display: inline-block;
+    object-fit: cover;
+}
