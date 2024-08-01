@@ -32,13 +32,14 @@
 }
 .main input::placeholder{
     color: #80eafa;
+    font-family:"Playfair Display", serif;
     font-weight: 600;
 }
 
 .main button{
     background-color: transparent;
     color: #80eafa;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
     border-width: 1px;
@@ -49,6 +50,8 @@
     width: 60%;
     margin-top: 25px; 
     margin-left: 20%;
+    font-family:"Playfair Display", serif;
+    font-weight: 600;;
 }
 .admin{
     margin-right: 10px;
