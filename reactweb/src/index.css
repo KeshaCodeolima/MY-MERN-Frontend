@@ -2,4 +2,6 @@ body{
     background-image: url('../src/Image/IBG4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    font-family:  "Playfair Display", serif;
+    font-weight: 400;
 } 
