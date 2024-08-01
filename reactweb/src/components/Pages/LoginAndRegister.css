@@ -37,21 +37,19 @@
 }
 
 .main button{
-    background-color: transparent;
-    color: #80eafa;
+    background:linear-gradient(90deg,rgb(40, 119, 247),rgb(51, 223, 253),rgb(202, 247, 249));
+    color: white;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    border-width: 1px;
-    border-color: white;
-    border-style:solid;
+    border: 2px solid white;
     border-radius: 30px;
     padding: 8px;
     width: 60%;
     margin-top: 25px; 
     margin-left: 20%;
     font-family:"Playfair Display", serif;
-    font-weight: 600;;
+    font-weight: 600;
 }
 .admin{
     margin-right: 10px;
