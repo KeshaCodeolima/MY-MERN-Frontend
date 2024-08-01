@@ -3,7 +3,7 @@
     backdrop-filter: blur(8px);
     border: 2px solid white;
     border-radius: 40px;
-    padding: 50px 30px;
+    padding: 20px 30px;
     margin: 100px auto;
     width: 300px;
     
@@ -65,5 +65,13 @@
 }
 .main .regi{
     margin-right: 100%;
+}
+.span{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    color:#80eafa;
+    font-size: 18px;
+    font-weight: 600;
 }
 
