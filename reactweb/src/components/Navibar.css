@@ -23,10 +23,11 @@
     border-radius: 30px;
     padding: 6px;
     text-decoration: none;
+    
 }
 .nav li a:hover{
     cursor:pointer;
-    background-color: rgb(129, 201, 252);
+    background: linear-gradient(90deg,rgb(27, 214, 247),rgb(142, 243, 249));
     border-radius: 30px;    
     transition: calc(900ms);
 } 
