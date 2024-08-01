@@ -10,8 +10,22 @@
     background-color: transparent;
     backdrop-filter: blur(8px);
     margin-top: 80px;
-    margin-left: 960px;
+    margin-left: 920px;
+    margin-right: 40px;
     padding:10px 40px;
-    
-    
+}
+.img1{
+    width: 30%;
+    height: 320px;
+    border-radius: 30px;
+    margin-top: -320px;
+   
+}
+.img2{
+    width: 32%;
+    height: 320px;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 300px;
 }
