@@ -1,11 +1,11 @@
 .header{
-    position: fixed;
+    position:absolute;
     top: 0;
     left: 0;
     background-color:transparent;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(100px);
     width: 100%;
-    
+    overflow: hidden; 
 }
 .nav ul{
     display: flex;

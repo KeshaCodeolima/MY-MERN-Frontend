@@ -1,0 +1,41 @@
+.abouttext{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.aboutboxtext{
+    border: 2px solid white;
+    border-radius: 24px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    padding:10px 40px;
+}
+.imageslider{
+    margin-top: 65px;
+    margin-left: 30px;
+    width: 95%;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.imageslidershow{
+    width: 900%;
+    height: 700px;
+    display: flex;
+}
+.imageslidershow input{
+    display: none;
+}
+.Image{
+    width:20%;
+    transition: 2s;
+}
+.Image img{
+    width: 1400px;
+    height: 800px;
+}
