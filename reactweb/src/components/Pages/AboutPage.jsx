@@ -1,13 +1,18 @@
 import React from "react";
 import './AboutPage.css';
 import Image1 from "../../Image/IBG5.jpg";
-//import Image2 from "../../Image/IBG6.jpg";
+import Image2 from "../../Image/IBG6.jpg";
 
 function AboutPage(){
     return(
         <>
-        <div className="Image">
-            <img src={Image1} alt="" className="img1"/>
+        <div className="imageslider">
+            <div className="Image1">
+                <img src={Image1} alt="" className="img1"/>
+            </div>
+            <div className="Image2">
+                <img src={Image2} alt="" className="img1"/>
+            </div>
         </div>
         <div className="abouttext">
             <div className="aboutboxtext">
