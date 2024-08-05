@@ -9,24 +9,23 @@
     border-radius: 24px;
     background-color: transparent;
     backdrop-filter: blur(20px);
-    margin-top: 50px;
+    margin-top: 150px;
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 30px;
     padding:10px 40px;
 }
 .imageslider{
-    display: flex;
+    margin-top: 80px;
+    margin-left: 220px;
+    margin-right: 120px;
+    width: 900px;
+    height: 450px;
+    border-radius: 30px;
+    overflow: hidden;
 }
-.Image1{
-    margin-top: 40px;
-}
-.Image2{
-    margin-top: 40px;
-}
-.img1{
-    width: 100%;
+.imageslidershow{
+    width: 500%;
     height: 500px;
-    margin-top: 20px;
-    border-radius: 30px;  
+    display: flex;
 }

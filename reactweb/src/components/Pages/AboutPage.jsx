@@ -7,11 +7,24 @@ function AboutPage(){
     return(
         <>
         <div className="imageslider">
-            <div className="Image1">
-                <img src={Image1} alt="" className="img1"/>
-            </div>
-            <div className="Image2">
-                <img src={Image2} alt="" className="img1"/>
+            <div className="imageslidershow">
+                <input type="radio" name="radio-btn" id="radio1" />
+                <input type="radio" name="radio-btn" id="radio2" />
+                <input type="radio" name="radio-btn" id="radio3" />
+                <input type="radio" name="radio-btn" id="radio4" />
+
+                <div className="Image1">
+                    <img src={Image1} alt=""/>
+                </div>
+                <div className="Image">
+                    <img src={Image2} alt=""/>
+                </div>
+                <div className="navigation-auto">
+                    <div className="auto-btn1"></div>
+                    <div className="auto-btn2"></div>
+                    <div className="auto-btn3"></div>
+                    <div className="auto-btn4"></div>
+                </div>
             </div>
         </div>
         <div className="abouttext">
