@@ -16,7 +16,7 @@
     padding:10px 40px;
 }
 .imageslider{
-    margin-top: 80px;
+    margin-top: 100px;
     margin-left: 220px;
     margin-right: 120px;
     width: 900px;
@@ -25,7 +25,10 @@
     overflow: hidden;
 }
 .imageslidershow{
-    width: 500%;
-    height: 500px;
+    width: 600%;
+    height: 600px;
     display: flex;
+}
+.imageslidershow input{
+    display: none;
 }
