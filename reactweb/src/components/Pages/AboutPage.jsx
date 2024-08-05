@@ -13,7 +13,7 @@ function AboutPage(){
                 <input type="radio" name="radio-btn" id="radio3" />
                 <input type="radio" name="radio-btn" id="radio4" />
 
-                <div className="Image1">
+                <div className="Image show">
                     <img src={Image1} alt=""/>
                 </div>
                 <div className="Image">
