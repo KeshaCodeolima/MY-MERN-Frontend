@@ -6,25 +6,16 @@ function FooterPage(){
         <footer className="footermain">
             <div className="footerleft">
                 <ul>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Contact</li>
-                    <li>Company</li>
-                </ul>
-            </div>
-            <div className="footercenter">
-                <ul>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Contact</li>
-                    <li>Company</li>
+                    <li>151/1 Andagalawaththa Bamunugedara Kurunegala</li>
+                    <li>0765858504</li>
+                    <li>keshankucodeolima@gmail.com</li>
+                    <li>Keshan Kulasekara</li>
                 </ul>
             </div>
             <div className="footerright">
                 <ul>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Contact</li>
+                    <li>Software Engineer Full Stack Developer</li>
+                    <li className="text"> am a software engineering undergraduate student in IIT, I specialize in creating clean, efficient code, seamless user experiences that blend cutting-edge technology with user-centric design, I am Passionate for Full Stack Development.</li>
                     <li>Company</li>
                 </ul>
             </div>

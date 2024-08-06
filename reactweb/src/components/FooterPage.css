@@ -7,21 +7,17 @@ body{
     background-color: transparent;
     backdrop-filter: blur(22px);
     width: 100%;
-    height:140px;
-    padding-bottom: 40px;
+    height:auto;
     border-top: 3px solid rgb(174, 235, 252);
     border-bottom: 3px solid rgb(174, 235, 252);
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
 }
 .footerleft{
-    flex:4;
-}
-.footercenter{
-    flex:4;
+    flex:5;
 }
 .footerright{
-    flex:4;
+    flex:3;
 }
 ul{
     list-style: none;
@@ -31,5 +27,8 @@ li{
     font-size: 18px;
     font-weight: 400;
     padding: 6px;
-    margin: 5px;
+    
+}
+.text{
+    text-align: justify;
 }
