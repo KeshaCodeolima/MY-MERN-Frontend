@@ -14,7 +14,7 @@ body{
     border-bottom-right-radius: 100px;
 }
 .footerleft{
-    flex:5;
+    flex:4;
 }
 .footerright{
     flex:3;
@@ -31,4 +31,26 @@ li{
 }
 .text{
     text-align: justify;
+}
+.Home{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 13px;
+}
+.list:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.Icons{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-right: 16px;
+}
+.Icons :hover{
+    cursor: pointer;
 }
