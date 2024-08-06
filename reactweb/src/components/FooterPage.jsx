@@ -4,9 +4,30 @@ function FooterPage(){
     return(
         <>
         <div className="footermain">
-            <div className="footerleft"></div>
-            <div className="footercenter"></div>
-            <div className="footerright"></div>
+            <div className="footerleft">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Contact</li>
+                    <li>Company</li>
+                </ul>
+            </div>
+            <div className="footercenter">
+            <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Contact</li>
+                    <li>Company</li>
+                </ul>
+            </div>
+            <div className="footerright">
+            <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Contact</li>
+                    <li>Company</li>
+                </ul>
+            </div>
         </div>
         </>
     )
