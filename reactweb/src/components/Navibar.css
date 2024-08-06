@@ -1,7 +1,7 @@
+body{
+    margin: 0;
+}
 .header{
-    position:absolute;
-    top: 0;
-    left: 0;
     background-color:transparent;
     backdrop-filter: blur(100px);
     width: 100%;
