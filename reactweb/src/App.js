@@ -8,6 +8,7 @@ import AdminPage from './components/Pages/AdminPage';
 import UserDetailsPage from './components/Pages/UserDetailsPage';
 import ForgetPageEmail from './components/Pages/ForgetPageEmail';
 import AboutPage from './components/Pages/AboutPage';
+import FooterPage from './components/FooterPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/forgetemail' element={<ForgetPageEmail/>} />
         <Route path ='/aboutus' element={<AboutPage/>}/>
        </Routes>
+       <FooterPage/>
     </div>
   );
 }
