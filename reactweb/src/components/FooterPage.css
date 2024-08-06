@@ -3,11 +3,16 @@ body{
     height: 100%;
 }
 .footermain{
-    background-color: rebeccapurple;
-    width: 100%;
-    height: 80px;
-    padding-bottom: 40px;
     display: flex;
+    background-color: transparent;
+    backdrop-filter: blur(22px);
+    width: 100%;
+    height:140px;
+    padding-bottom: 40px;
+    border-top: 3px solid rgb(174, 235, 252);
+    border-bottom: 3px solid rgb(174, 235, 252);
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
 }
 .footerleft{
     flex:4;
@@ -17,4 +22,12 @@ body{
 }
 .footerright{
     flex:4;
+}
+ul{
+    list-style: none;
+}
+li{
+    color: white;
+    padding: 6px;
+    margin: 5px;
 }

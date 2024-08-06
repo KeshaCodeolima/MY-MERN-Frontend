@@ -3,7 +3,7 @@ import "./FooterPage.css";
 function FooterPage(){
     return(
         <>
-        <div className="footermain">
+        <footer className="footermain">
             <div className="footerleft">
                 <ul>
                     <li>Home</li>
@@ -13,7 +13,7 @@ function FooterPage(){
                 </ul>
             </div>
             <div className="footercenter">
-            <ul>
+                <ul>
                     <li>Home</li>
                     <li>About us</li>
                     <li>Contact</li>
@@ -21,14 +21,14 @@ function FooterPage(){
                 </ul>
             </div>
             <div className="footerright">
-            <ul>
+                <ul>
                     <li>Home</li>
                     <li>About us</li>
                     <li>Contact</li>
                     <li>Company</li>
                 </ul>
             </div>
-        </div>
+        </footer>
         </>
     )
 }
