@@ -9,14 +9,14 @@
     border-radius: 24px;
     background-color: transparent;
     backdrop-filter: blur(20px);
-    margin-top: 60px;
+    margin-top: 40px;
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 30px;
     padding:10px 40px;
 }
 .imageslider{
-    margin-top: 80px;
+    margin-top: 30px;
     margin-left: 30px;
     width: 95%;
     height: 500px;
