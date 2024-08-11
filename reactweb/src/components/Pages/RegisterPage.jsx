@@ -37,11 +37,16 @@ function RegisterPage (){
 
     const submit = (e)=>{
         e.preventDefault();
-        axios.post("http://localhost:3001/register",{name,email,phonenumber,password})
+        const ValidationsErrors = validation();
+        if (Object.keys(ValidationsErrors).length>0) {
+            setErrors(ValidationsErrors);
+        } else {
+            axios.post("http://localhost:3001/register",{name,email,phonenumber,password})
         .then(result=>{console.log(result)
             navigate('/login')
         })
-        .catch(error=>console.log(error))
+        .catch(error=>console.log(error))   
+        }
     }
 
     return(
