@@ -13,6 +13,12 @@ function AdminPage() {
 
   const validation = ()=>{
     const newErrors = {};
+
+    if (!email) {
+      newErrors.email = "Email is Required.";
+    }else if(!/\S+@\S+\.\S+/.test(email)){
+      newErrors.email="Email is Not Valid.";
+    }
   }
 
   const login = (e)=>{
