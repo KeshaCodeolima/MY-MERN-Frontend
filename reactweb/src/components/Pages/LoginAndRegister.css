@@ -77,6 +77,8 @@
 .errors{
     color: red;
     font-size: 0.8em;
-    margin-top: 3px;
+    font-weight: 600;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
