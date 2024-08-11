@@ -10,6 +10,7 @@ function RegisterPage (){
     const [email, setEmail]= useState('');
     const [phonenumber, setPhonenumber]= useState('');
     const [password, setPassword]= useState('');
+    const [errors,seterrors]=useState('');
     const navigate = useNavigate();
 
     const submit = (e)=>{
