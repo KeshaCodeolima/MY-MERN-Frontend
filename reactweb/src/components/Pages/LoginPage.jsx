@@ -62,6 +62,7 @@ function LoginPage() {
             <input type="password" 
             placeholder='Password'  
             onChange={(e)=>setPassword(e.target.value)}/>
+            {errors.password && <p className='errors'>{errors.password}</p>}
 
             <Link to={'/forgetemail'}>Forget Password</Link>
             <button type= "submit">Login</button>
