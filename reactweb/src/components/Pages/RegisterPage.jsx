@@ -75,6 +75,7 @@ function RegisterPage (){
                 <input type="password" 
                 placeholder='Password' 
                 onChange={(e)=>setPassword(e.target.value)}/>
+                {errors.password && <p className='errors'>{errors.password}</p>}
 
                 <button type='submit'>Register</button>
                 <Link to={"/login"} className="span">All Ready Have a Account.(Login)</Link>
