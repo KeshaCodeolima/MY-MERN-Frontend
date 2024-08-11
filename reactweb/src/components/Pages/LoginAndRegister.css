@@ -74,4 +74,11 @@
     font-size: 18px;
     font-weight: 600;
 }
+.errors{
+    color: red;
+    font-size:15px;
+    font-weight: 600;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
 

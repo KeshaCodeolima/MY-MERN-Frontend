@@ -8,18 +8,41 @@ function AdminPage() {
 
   const [email, setEmail]= useState('');
   const [password, setPassword]= useState('');
+  const [errors, setErrors] =useState('');
   const navigate = useNavigate();
 
+  const validation = ()=>{
+    const newErrors = {};
+
+    if (!email) {
+      newErrors.email = "Email is Required.";
+    }else if(!/\S+@\S+\.\S+/.test(email)){
+      newErrors.email="Email is Not Valid.";
+    }
+    if (!password) {
+      newErrors.password="Password is Required.";
+    }else if(password.length > 6 ){
+      newErrors.password = "Password is least than 6 characters or more."
+    }
+    return newErrors;
+  }
 
   const login = (e)=>{
       e.preventDefault();
-      axios.post("http://localhost:3001/login",{email,password})
+      const ValidationsErrors = validation();
+
+      if (Object.keys(ValidationsErrors).length>0) {
+        setErrors(ValidationsErrors);
+      } else {
+        axios.post("http://localhost:3001/login",{email,password})
       .then(result=>{console.log(result)
         if (result.data === "Succesful Login") {
+          alert("Login Succesfully")
           navigate("/userdetails")
         }
       })
-      .catch(error=>console.log(error))
+      .catch(error=>console.log(error)) 
+      }
   }
 
 
@@ -27,9 +50,18 @@ function AdminPage() {
       <div className='box'>
         <div className='main'>
           <h1>Admin page</h1>
+
           <form onSubmit={login}>
-            <input type="text" placeholder='Admin Email' onChange={(e)=>setEmail(e.target.value)}/>
-            <input type="password" placeholder='Admin Password'  onChange={(e)=>setPassword(e.target.value)}/>
+            <input type="text" 
+            placeholder='Admin Email' 
+            onChange={(e)=>setEmail(e.target.value)}/>
+            {errors.email && <p className='errors'>{errors.email}</p>}
+
+            <input type="password" 
+            placeholder='Admin Password'  
+            onChange={(e)=>setPassword(e.target.value)}/>
+            {errors.password && <p className='errors'>{errors.password}</p>}
+
             <Link to={'/forgetemail'}>Forget Password</Link>
             <button type= "submit">Login</button>
           </form>
