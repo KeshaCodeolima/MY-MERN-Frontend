@@ -65,6 +65,7 @@ function RegisterPage (){
                 <input type="email" 
                 placeholder='Email' 
                 onChange={(e)=>setEmail(e.target.value)}/>
+                {errors.email && <p className='errors'>{errors.email}</p>}
 
                 <input type="text" 
                 placeholder='Phone Number' 
