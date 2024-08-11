@@ -8,8 +8,12 @@ function AdminPage() {
 
   const [email, setEmail]= useState('');
   const [password, setPassword]= useState('');
+  const [errors, setErrors] =useState('');
   const navigate = useNavigate();
 
+  const validation = ()=>{
+    const newErrors = {};
+  }
 
   const login = (e)=>{
       e.preventDefault();
@@ -27,9 +31,16 @@ function AdminPage() {
       <div className='box'>
         <div className='main'>
           <h1>Admin page</h1>
+
           <form onSubmit={login}>
-            <input type="text" placeholder='Admin Email' onChange={(e)=>setEmail(e.target.value)}/>
-            <input type="password" placeholder='Admin Password'  onChange={(e)=>setPassword(e.target.value)}/>
+            <input type="text" 
+            placeholder='Admin Email' 
+            onChange={(e)=>setEmail(e.target.value)}/>
+
+            <input type="password" 
+            placeholder='Admin Password'  
+            onChange={(e)=>setPassword(e.target.value)}/>
+
             <Link to={'/forgetemail'}>Forget Password</Link>
             <button type= "submit">Login</button>
           </form>
