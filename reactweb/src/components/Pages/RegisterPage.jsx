@@ -13,6 +13,13 @@ function RegisterPage (){
     const [errors,setErrors]=useState('');
     const navigate = useNavigate();
 
+    const validation=()=>{
+        const newErrors={};
+        if (!name) {
+            newErrors.name = "Name is Required";
+        }
+    }
+
     const submit = (e)=>{
         e.preventDefault();
         axios.post("http://localhost:3001/register",{name,email,phonenumber,password})
