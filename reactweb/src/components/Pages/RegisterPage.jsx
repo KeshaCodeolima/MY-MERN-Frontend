@@ -70,6 +70,7 @@ function RegisterPage (){
                 <input type="text" 
                 placeholder='Phone Number' 
                 onChange={(e)=> setPhonenumber(e.target.value)}/>
+                {errors.phonenumber && <p className='errors'>{errors.phonenumber}</p>}
 
                 <input type="password" 
                 placeholder='Password' 
