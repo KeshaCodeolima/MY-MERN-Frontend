@@ -30,7 +30,7 @@ function LoginPage() {
   const login = (e)=>{
       e.preventDefault();
       const ValidationErrors = validation();
-      if (Object.key (ValidationErrors).length>0) {
+      if (Object.keys(ValidationErrors).length>0) {
         setErrors(ValidationErrors);
       } else {
         axios.post("http://localhost:3001/login",{email,password})
