@@ -19,6 +19,12 @@ function LoginPage() {
     }else if(!/\S+@\S+\.\S+/.test(email)){
       newErrors.email="USername is Not Valid.";
     }
+    if(!password){
+      newErrors.password="Password is required.";
+    }else if(password.length < 6){
+      newErrors.password = "Password is least than 6 characters or more.";
+    }
+     return newErrors;
   }
 
   const login = (e)=>{
