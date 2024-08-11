@@ -54,6 +54,7 @@ function AdminPage() {
             <input type="text" 
             placeholder='Admin Email' 
             onChange={(e)=>setEmail(e.target.value)}/>
+            {errors.email && <p className='errors'>{errors.email}</p>}
 
             <input type="password" 
             placeholder='Admin Password'  
