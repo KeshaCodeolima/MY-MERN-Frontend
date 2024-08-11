@@ -16,7 +16,12 @@ function RegisterPage (){
     const validation=()=>{
         const newErrors={};
         if (!name) {
-            newErrors.name = "Name is Required";
+            newErrors.name = "Name is Required.";
+        }
+        if (!email) {
+            newErrors.email ="Email is Required.";
+        } else if (!/\S+@\S+\.\S+/.test(email)) {
+            newErrors.email ="Email is Not Valid.";
         }
     }
 
