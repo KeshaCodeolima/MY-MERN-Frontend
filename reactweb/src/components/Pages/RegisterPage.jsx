@@ -33,6 +33,7 @@ function RegisterPage (){
         }else if(!password.length<6){
             newErrors.password ="Password must be at least 6 characters long."
         }
+        return newErrors;
     }
 
     const submit = (e)=>{
