@@ -19,10 +19,17 @@ function AdminPage() {
     }else if(!/\S+@\S+\.\S+/.test(email)){
       newErrors.email="Email is Not Valid.";
     }
+    if (!password) {
+      newErrors.password="Password is Required.";
+    }else if(password.length > 6 ){
+      newErrors.password = "Password is least than 6 characters or more."
+    }
+    return newErrors;
   }
 
   const login = (e)=>{
       e.preventDefault();
+      
       axios.post("http://localhost:3001/login",{email,password})
       .then(result=>{console.log(result)
         if (result.data === "Succesful Login") {
