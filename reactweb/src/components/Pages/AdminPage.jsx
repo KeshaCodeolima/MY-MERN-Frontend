@@ -21,7 +21,7 @@ function AdminPage() {
     }
     if (!password) {
       newErrors.password="Password is Required.";
-    }else if(password.length > 6 ){
+    }else if(password.length < 6 ){
       newErrors.password = "Password is least than 6 characters or more."
     }
     return newErrors;
