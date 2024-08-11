@@ -28,6 +28,11 @@ function RegisterPage (){
         } else if(!/^\d{10}$/.test(phonenumber)){
             newErrors.phonenumber="Must Be 10 Numbers.";
         }
+        if (!password) {
+            newErrors.password="Password is Required.";
+        }else if(!password.length<6){
+            newErrors.password ="Password must be at least 6 characters long."
+        }
     }
 
     const submit = (e)=>{
