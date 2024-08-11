@@ -23,6 +23,11 @@ function RegisterPage (){
         } else if (!/\S+@\S+\.\S+/.test(email)) {
             newErrors.email ="Email is Not Valid.";
         }
+        if (!phonenumber) {
+            newErrors.phonenumber="Phone Number is Required.";
+        } else if(!/^\d{10}$/.test(phonenumber)){
+            newErrors.phonenumber="Must Be 10 Numbers.";
+        }
     }
 
     const submit = (e)=>{
