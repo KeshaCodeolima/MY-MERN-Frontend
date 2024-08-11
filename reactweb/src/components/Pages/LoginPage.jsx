@@ -11,6 +11,15 @@ function LoginPage() {
   const [errors, setErrors] = useState('');
   const navigate = useNavigate();
 
+  const validation = ()=>{
+    const newErrors = {};
+
+    if(!email){
+      newErrors.email="Username is Required.";
+    }else if(!/\S+@\S+\.\S+/.test(email)){
+      newErrors.email="USername is Not Valid.";
+    }
+  }
 
   const login = (e)=>{
       e.preventDefault();
