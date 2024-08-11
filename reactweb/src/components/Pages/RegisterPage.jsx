@@ -43,6 +43,7 @@ function RegisterPage (){
         } else {
             axios.post("http://localhost:3001/register",{name,email,phonenumber,password})
         .then(result=>{console.log(result)
+            alert("Register Succesfully")
             navigate('/login')
         })
         .catch(error=>console.log(error))   
@@ -55,10 +56,23 @@ function RegisterPage (){
             <div className='box'>
                 <h1>Register</h1>
                 <form onSubmit={submit}>
-                <input type="text" placeholder='Your Name' onChange={(e)=>setName(e.target.value)}/>
-                <input type="email" placeholder='Email' onChange={(e)=>setEmail(e.target.value)}/>
-                <input type="text" placeholder='Phone Number' onChange={(e)=> setPhonenumber(e.target.value)}/>
-                <input type="password" placeholder='Password' onChange={(e)=>setPassword(e.target.value)}/>
+
+                <input type="text" 
+                placeholder='Your Name' 
+                onChange={(e)=>setName(e.target.value)}/>
+                {errors.name && <p className='errors'>{errors.name}</p>}
+
+                <input type="email" 
+                placeholder='Email' 
+                onChange={(e)=>setEmail(e.target.value)}/>
+
+                <input type="text" 
+                placeholder='Phone Number' 
+                onChange={(e)=> setPhonenumber(e.target.value)}/>
+
+                <input type="password" 
+                placeholder='Password' 
+                onChange={(e)=>setPassword(e.target.value)}/>
 
                 <button type='submit'>Register</button>
                 <Link to={"/login"} className="span">All Ready Have a Account.(Login)</Link>
