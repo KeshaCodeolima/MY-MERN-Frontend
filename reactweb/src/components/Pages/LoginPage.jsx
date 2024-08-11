@@ -52,9 +52,17 @@ function LoginPage() {
       <div className='box'>
         <div className='main'>
           <h1>Login page</h1>
+
           <form onSubmit={login}>
-            <input type="text" placeholder='Email' onChange={(e)=>setEmail(e.target.value)}/>
-            <input type="password" placeholder='Password'  onChange={(e)=>setPassword(e.target.value)}/>
+            <input type="text" 
+            placeholder='Email' 
+            onChange={(e)=>setEmail(e.target.value)}/>
+            {errors.email && <p className='errors'>{errors.email}</p>}
+
+            <input type="password" 
+            placeholder='Password'  
+            onChange={(e)=>setPassword(e.target.value)}/>
+
             <Link to={'/forgetemail'}>Forget Password</Link>
             <button type= "submit">Login</button>
             <Link to={'/register'}>Register</Link>
