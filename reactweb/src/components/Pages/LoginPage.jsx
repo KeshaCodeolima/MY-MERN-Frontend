@@ -29,7 +29,11 @@ function LoginPage() {
 
   const login = (e)=>{
       e.preventDefault();
-      axios.post("http://localhost:3001/login",{email,password})
+      const ValidationErrors = validation();
+      if (Object.key (ValidationErrors).length>0) {
+        setErrors(ValidationErrors);
+      } else {
+        axios.post("http://localhost:3001/login",{email,password})
       .then(result=>{console.log(result)
         if (result.data === "Succesful Login") {
           console.log(result)
@@ -39,7 +43,8 @@ function LoginPage() {
           alert("Email OR Password Incorrect")
         }
       })
-      .catch(err=>console.log(err))
+      .catch(err=>console.log(err)) 
+      }
   }
 
 
