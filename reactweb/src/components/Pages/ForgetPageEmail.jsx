@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 function ForgetPageEmail(){
@@ -24,8 +25,13 @@ function ForgetPageEmail(){
         <div className="box">
         <div className="main">
             <h1>Enter Email to Add NewPassword</h1>
+            
             <form onSubmit={submit}>
-            <input type="text" placeholder="Email"onChange={(e) => setEmail(e.target.value)}/>
+            <input type="text" 
+            placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}/>
+
+            <Link to={"/login"}>Login Page</Link>
             <button type="submit">OK</button>
             </form>
         </div>
