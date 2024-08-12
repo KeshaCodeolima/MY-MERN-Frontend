@@ -81,4 +81,8 @@
     margin-top: 1px;
     margin-bottom: 1px;
 }
+.link{
+    display: flex;
+    justify-content: space-between;
+}
 

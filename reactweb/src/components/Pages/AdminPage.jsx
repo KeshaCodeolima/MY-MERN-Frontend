@@ -67,7 +67,10 @@ function AdminPage() {
             onChange={(e)=>setPassword(e.target.value)}/>
             {errors.password && <p className='errors'>{errors.password}</p>}
 
-            <Link to={'/forgetemail'}>Forget Password</Link>
+            <div className="link">
+              <Link to={'/forgetemail'}>Forget Password</Link>
+              <Link to={'/login'}>Login Page</Link>
+            </div>
             <button type= "submit">Login</button>
           </form>
         </div>
