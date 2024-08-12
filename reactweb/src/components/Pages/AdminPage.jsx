@@ -42,7 +42,7 @@ function AdminPage() {
           navigate("/userdetails")
 
         }else if (result.data === "Invalid Email Input"){
-          alert("Your Email is not valid.")
+          alert("Your Email is not valid to Login to the Admin Page.")
 
         }else if (result.data === "login Error"){
           alert("Your Password or Email is not Correct")
