@@ -66,8 +66,10 @@ function LoginPage() {
 
             <Link to={'/forgetemail'}>Forget Password</Link>
             <button type= "submit">Login</button>
-            <Link to={'/register'}>Register</Link>
-            <Link to={'/admin'} className='admin'>Login As Admin</Link>
+            <div className="link">
+              <Link to={'/register'}>Register</Link>
+              <Link to={'/admin'}>Login As Admin</Link>
+            </div>
           </form>
         </div>
       </div>
