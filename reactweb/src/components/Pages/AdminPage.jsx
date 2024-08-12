@@ -34,18 +34,23 @@ function AdminPage() {
       if (Object.keys(ValidationsErrors).length>0) {
         setErrors(ValidationsErrors);
       } else {
-        axios.post("http://localhost:3001/login",{email,password})
+        axios.post("http://localhost:3001/adminlogin",{email,password})
       .then(result=>{console.log(result)
+
         if (result.data === "Succesful Login") {
           alert("Login Succesfully")
           navigate("/userdetails")
+
+        }else if (result.data === "Invalid Email Input"){
+          alert("Your Email is not valid.")
+
+        }else if (result.data === "login Error"){
+          alert("Your Password or Email is not Correct")
         }
       })
       .catch(error=>console.log(error)) 
       }
   }
-
-
   return (
       <div className='box'>
         <div className='main'>
