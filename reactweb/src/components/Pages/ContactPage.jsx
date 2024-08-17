@@ -8,11 +8,11 @@ function ContactPage (){
             <div className="mainleft">
                 <div className="leftiteams">
                     <li className="contactlist">Location</li>
-                    <p>151/1 Andagalawaththa Bamunugedara Kurunegala</p>
+                    <p className="p1">151/1 Andagalawaththa Bamunugedara Kurunegala</p>
                     <li className="contactlist">Phone Number</li>
-                    <p>076 5858504</p>
+                    <p className="p1">076 5858504</p>
                     <li className="contactlist">Email</li>
-                    <p>keshankulasekara@gmail.com</p>
+                    <p className="p1">keshankulasekara@gmail.com</p>
                 </div>
             </div>
             <div className="mainright">

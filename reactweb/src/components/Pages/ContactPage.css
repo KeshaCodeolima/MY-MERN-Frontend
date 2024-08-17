@@ -1,0 +1,29 @@
+.main2{
+    display: flex;
+}
+.mainleft{
+    flex: 5;
+    margin-top: 10%;
+    margin-bottom: 18%;
+}
+.mainright{
+    flex:6;
+    margin-top: 10%;
+    margin-bottom: 18%;
+}
+.leftiteams{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.p1{
+    margin-left:15%;
+    text-align: justify;
+}
+.contactlist{
+    color:#04ddfe;
+    font-size: 24px;
+    font-weight: 800;
+    margin-left: 6%;    
+    list-style: none;
+}
