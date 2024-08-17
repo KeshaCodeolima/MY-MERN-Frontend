@@ -4,12 +4,12 @@
 .mainleft{
     flex: 5;
     margin-top: 10%;
-    margin-bottom: 18%;
+    margin-bottom: 12%;
 }
 .mainright{
     flex:6;
     margin-top: 10%;
-    margin-bottom: 18%;
+    margin-bottom: 12%;
 }
 .leftiteams{
     color: white;
@@ -19,6 +19,7 @@
 .p1{
     margin-left:15%;
     text-align: justify;
+    font-size: 24px;
 }
 .contactlist{
     color:#04ddfe;
@@ -32,16 +33,14 @@
     backdrop-filter:blur(30px);
     border: 3px solid white;
     border-radius: 20px;
-    margin-right: 16%;
+    margin-right: 6%;
     margin-left: 20%;
 }
 .boxpadding{
-    padding-left:180px;
-    padding-right: 180px;
+    padding-left:220px;
+    padding-right: 220px;
     padding-top: 10px;
     padding-bottom: 40px;
-    justify-content: center;
-    align-items: center;
 }
 .p2{
     color:#80eafa;
@@ -60,7 +59,7 @@
     background-color: transparent;
 }
 .inputsmassage1{
-    padding: 60px 100px;
+    padding: 80px 100px;
     border-radius: 26px;
     border: 2px solid white;
     display: inline;
