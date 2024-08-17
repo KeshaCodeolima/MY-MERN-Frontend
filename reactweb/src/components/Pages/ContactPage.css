@@ -3,12 +3,12 @@
 }
 .mainleft{
     flex: 5;
-    margin-top: 10%;
+    margin-top: 6%;
     margin-bottom: 12%;
 }
 .mainright{
     flex:6;
-    margin-top: 10%;
+    margin-top: 6%;
     margin-bottom: 12%;
 }
 .leftiteams{
@@ -34,11 +34,11 @@
     border: 3px solid white;
     border-radius: 20px;
     margin-right: 6%;
-    margin-left: 20%;
+    margin-left: 4%;
 }
 .boxpadding{
-    padding-left:220px;
-    padding-right: 220px;
+    padding-left:160px;
+    padding-right: 160px;
     padding-top: 10px;
     padding-bottom: 40px;
 }
@@ -48,25 +48,25 @@
     font-weight: 800;
 }
 .inputsmassage{
-    padding: 10px 40px;
+    padding: 10px 100px;
     border-radius: 26px;
     border: 2px solid white;
     display: inline;
     margin-top: 6px;
     margin-bottom: 15px;
     outline: none;
-    margin-left: -65px;
+    margin-left: -25px;
     background-color: transparent;
 }
 .inputsmassage1{
-    padding: 80px 100px;
+    padding: 80px 180px;
     border-radius: 26px;
     border: 2px solid white;
     display: inline;
     margin-top: 6px;
     margin-bottom: 15px;
     outline: none;
-    margin-left: -65px;
+    margin-left: -25px;
     background-color: transparent;
 }
 .inputsmassage::placeholder{
@@ -85,4 +85,15 @@
     border: 2px solid#80eafa;
     border-radius: 50%;
     padding: 8px;
+}
+.button{
+    font-size: 18px;
+    font-weight: 400;
+    color: #80eafa;
+    background-color:transparent;
+    padding: 8px 60px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-left: -25px;
+    outline: none;
 }
