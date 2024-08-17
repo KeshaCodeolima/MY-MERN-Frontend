@@ -14,7 +14,14 @@ function ContactPage (){
                     <p>keshankulasekara@gmail.com</p>
                 </div>
             </div>
-            <div className="mainright"></div>
+            <div className="mainright">
+                <div className="box1">
+                    <p>Send Message</p>
+                    <input type="text" placeholder="Full Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="text" placeholder="Enter your Massage" />
+                </div>
+            </div>
         </div>
         </>
     )
