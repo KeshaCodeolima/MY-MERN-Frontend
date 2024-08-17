@@ -1,21 +1,22 @@
 import React from "react";
+import "./ContactPage.css";
 
 function ContactPage (){
     return(
         <>
-        <div className="main1">
+        <div className="main2">
             <div className="mainleft">
                 <div className="leftiteams">
-                    <li>Location</li>
+                    <li className="contactlist">Location</li>
                     <p>151/1 Andagalawaththa Bamunugedara Kurunegala</p>
-                    <li>Phone Number</li>
+                    <li className="contactlist">Phone Number</li>
                     <p>076 5858504</p>
-                    <li>Email</li>
+                    <li className="contactlist">Email</li>
                     <p>keshankulasekara@gmail.com</p>
                 </div>
             </div>
             <div className="mainright">
-                <div className="box1">
+                <div className="box3">
                     <p>Send Message</p>
                     <input type="text" placeholder="Full Name" />
                     <input type="email" placeholder="Email" />
