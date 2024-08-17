@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactPage.css";
+import { FaMapLocation,FaPhone,FaEnvelope } from "react-icons/fa6";
 
 function ContactPage (){
     return(
@@ -7,11 +8,11 @@ function ContactPage (){
         <div className="main2">
             <div className="mainleft">
                 <div className="leftiteams">
-                    <li className="contactlist">Location</li>
+                    <li className="contactlist"><FaMapLocation className="Icons1"/>Location</li>
                     <p className="p1">151/1 Andagalawaththa Bamunugedara Kurunegala</p>
-                    <li className="contactlist">Phone Number</li>
+                    <li className="contactlist"> <FaPhone className="Icons1"/>Phone Number</li>
                     <p className="p1">076 5858504</p>
-                    <li className="contactlist">Email</li>
+                    <li className="contactlist"><FaEnvelope className="Icons1"/>Email</li>
                     <p className="p1">keshankulasekara@gmail.com</p>
                 </div>
             </div>
