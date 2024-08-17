@@ -33,14 +33,14 @@
     backdrop-filter:blur(30px);
     border: 3px solid white;
     border-radius: 20px;
-    margin-right: 6%;
-    margin-left: 4%;
+    margin-right: 4%;
+    margin-left: 18%;
 }
 .boxpadding{
-    padding-left:160px;
-    padding-right: 160px;
-    padding-top: 10px;
-    padding-bottom: 40px;
+    padding-left:120px;
+    padding-right: 120px;
+    padding-bottom: 40px; 
+    margin: 10% 8%;
 }
 .p2{
     color:#80eafa;
@@ -57,9 +57,10 @@
     outline: none;
     margin-left: -25px;
     background-color: transparent;
+    color: white;
 }
 .inputsmassage1{
-    padding: 80px 180px;
+    padding: 40px 100px;
     border-radius: 26px;
     border: 2px solid white;
     display: inline;
@@ -68,6 +69,7 @@
     outline: none;
     margin-left: -25px;
     background-color: transparent;
+    color: white;
 }
 .inputsmassage::placeholder{
     color:#80eafa;
