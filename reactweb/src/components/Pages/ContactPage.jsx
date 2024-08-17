@@ -17,10 +17,12 @@ function ContactPage (){
             </div>
             <div className="mainright">
                 <div className="box3">
-                    <p>Send Message</p>
-                    <input type="text" placeholder="Full Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="text" placeholder="Enter your Massage" />
+                    <div className="boxpadding">
+                        <p  className="p2">Send Message</p>
+                        <input type="text" placeholder="Full Name" className="inputsmassage"/>
+                        <input type="email" placeholder="Email" className="inputsmassage"/>
+                        <input type="text" placeholder="Enter your Massage" className="inputsmassage1"/>
+                    </div>
                 </div>
             </div>
         </div>
