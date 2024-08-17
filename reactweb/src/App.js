@@ -9,6 +9,7 @@ import UserDetailsPage from './components/Pages/UserDetailsPage';
 import ForgetPageEmail from './components/Pages/ForgetPageEmail';
 import AboutPage from './components/Pages/AboutPage';
 import FooterPage from './components/FooterPage';
+import ContactPage from './components/Pages/ContactPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/userdetails' element={<UserDetailsPage/>} />
         <Route path='/forgetemail' element={<ForgetPageEmail/>} />
         <Route path ='/aboutus' element={<AboutPage/>}/>
+        <Route path='/contact' element={<ContactPage/>}/>
        </Routes>
        <FooterPage/>
     </div>
