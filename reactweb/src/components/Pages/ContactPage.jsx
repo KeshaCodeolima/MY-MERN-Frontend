@@ -22,7 +22,7 @@ function ContactPage (){
                         <p  className="p2">Send Message</p>
                         <input type="text" placeholder="Full Name" className="inputsmassage"/>
                         <input type="email" placeholder="Email" className="inputsmassage"/>
-                        <input type="text" placeholder="Enter your Massage" className="inputsmassage1"/>
+                        <textarea placeholder="Write the Message" className="inputsmassage1"></textarea>
                         <button type="submit" className="button">Send</button>
                     </div>
                 </div>
