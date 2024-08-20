@@ -15,6 +15,16 @@
     color: white;
     font-size: 20px;
     font-weight: 600;
+    transition: 1s;
+    transition-delay: 2s;
+}
+.leftiteams:hover{
+    background-color: transparent;
+    backdrop-filter: blur(60px);
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-left: 1%;
+    padding: 10px 10px 20px 10px;
 }
 .p1{
     margin-left:15%;
