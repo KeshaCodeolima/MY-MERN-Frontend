@@ -13,9 +13,10 @@ function ContactPage (){
           .sendForm('service_oy4at6h', 'template_xw6se89', form.current,'6B8ivzkQOW-eECsqa')
           .then(
             () => {
-              console.log('SUCCESS!');
+              alert("Thank Your. Your Email send Successfully");
             },
             (error) => {
+                alert("Your Email is not send.")
               console.log('FAILED...', error.text);
             },
           );
