@@ -1,0 +1,113 @@
+.main2{
+    display: flex;
+}
+.mainleft{
+    flex: 5;
+    margin-top: 6%;
+    margin-bottom: 12%;
+}
+.mainright{
+    flex:6;
+    margin-top: 6%;
+    margin-bottom: 12%;
+}
+.leftiteams{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 1s;
+    transition-delay: 2s;
+}
+.leftiteams:hover{
+    background-color: transparent;
+    backdrop-filter: blur(60px);
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-left: 1%;
+    padding: 10px 10px 20px 10px;
+}
+.p1{
+    margin-left:15%;
+    text-align: justify;
+    font-size: 24px;
+}
+.contactlist{
+    color:#04ddfe;
+    font-size: 24px;
+    font-weight: 800;
+    margin-left: 6%;    
+    list-style: none;
+}
+.box3{
+    background-color:transparent;
+    backdrop-filter:blur(100px);
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-right: 16%;
+    margin-left: 18%;
+}
+.boxpadding{
+    padding-left:50px;
+    padding-right: 120px;
+    padding-bottom: 20px; 
+    margin: 10% 8%;
+}
+.p2{
+    color:#04ddfe;
+    font-size: 24px;
+    font-weight: 800;
+}
+.inputsmassage{
+    padding: 10px;
+    width: 100%;
+    border-radius: 26px;
+    border: 2px solid white;
+    display: inline;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    outline: none;
+    margin-left: -25px;
+    background-color: transparent;
+    color: white;
+}
+.inputsmassage1{
+    padding: 10px;
+    width: 120%;
+    height: 100px;
+    border-radius: 26px;
+    border: 2px solid white;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    outline: none;
+    margin-left: -25px;
+    background-color: transparent;
+    color: white;
+}
+.inputsmassage::placeholder{
+    color:#04ddfe;
+    font-family:"Playfair Display", serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+.inputsmassage1::placeholder{
+    color:#04ddfe;
+    font-family:"Playfair Display", serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+.Icons1{
+    border: 2px solid#80eafa;
+    border-radius: 50%;
+    padding: 8px;
+}
+.button{
+    font-size: 18px;
+    font-weight: 600;
+    color:white;
+    background:linear-gradient(90deg,rgb(40, 119, 247),rgb(51, 223, 253),rgb(202, 247, 249));
+    padding: 8px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-left: -25px;
+    outline: none;
+}
