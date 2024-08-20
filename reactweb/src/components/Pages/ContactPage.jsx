@@ -1,8 +1,26 @@
-import React from "react";
+import {useRef } from "react";
+import emailjs from '@emailjs/browser';
 import "./ContactPage.css";
 import { FaMapLocation,FaPhone,FaEnvelope } from "react-icons/fa6";
 
 function ContactPage (){
+
+    const form = useRef();
+
+    const submit= async(e)=>{
+        e.preventDefault();
+        emailjs
+          .sendForm('service_oy4at6h', 'template_xw6se89', form.current,'6B8ivzkQOW-eECsqa')
+          .then(
+            () => {
+              console.log('SUCCESS!');
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+            },
+          );
+    }
+
     return(
         <>
         <div className="main2">
@@ -19,11 +37,13 @@ function ContactPage (){
             <div className="mainright">
                 <div className="box3">
                     <div className="boxpadding">
-                        <p  className="p2">Send Message</p>
-                        <input type="text" placeholder="Full Name" className="inputsmassage"/>
-                        <input type="email" placeholder="Email" className="inputsmassage"/>
-                        <textarea placeholder="Write the Message" className="inputsmassage1"></textarea>
-                        <button type="submit" className="button">Send</button>
+                        <form ref={form} onSubmit={submit}>
+                            <p  className="p2">Send Message</p>
+                            <input type="text" name="user_name" placeholder="Full Name" className="inputsmassage"/>
+                            <input type="email" name="user_email" placeholder="Email" className="inputsmassage"/>
+                            <textarea name="message" placeholder="Write the Message" className="inputsmassage1"></textarea>
+                            <button type="submit" className="button">Send</button>
+                        </form>
                     </div>
                 </div>
             </div>
