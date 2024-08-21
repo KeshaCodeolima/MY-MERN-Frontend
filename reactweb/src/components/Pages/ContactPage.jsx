@@ -17,6 +17,14 @@ function ContactPage (){
         message:'',
     })
 
+    const validation = ()=>{
+        const newErrors = {};
+
+        if(!formData.user_name){
+            newErrors.user_name = "Name is Requied."
+        }
+    }
+
     const form = useRef();
 
     const submit= async(e)=>{
