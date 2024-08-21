@@ -74,9 +74,24 @@ function ContactPage (){
                     <div className="boxpadding">
                         <form ref={form} onSubmit={submit}>
                             <p  className="p2">Send Message</p>
-                            <input type="text" name="user_name" placeholder="Full Name" className="inputsmassage"/>
-                            <input type="email" name="user_email" placeholder="Email" className="inputsmassage"/>
-                            <textarea name="message" placeholder="Write the Message" className="inputsmassage1"></textarea>
+
+                            <input type="text" 
+                            name="user_name" 
+                            placeholder="Full Name" 
+                            className="inputsmassage"
+                            value={formData.user_name}/>
+
+                            <input type="email" 
+                            name="user_email" 
+                            placeholder="Email" 
+                            className="inputsmassage"
+                            value={formData.user_email}/>
+
+                            <textarea name="message" 
+                            placeholder="Write the Message" 
+                            className="inputsmassage1"
+                            value={formData.message}/>
+                            
                             <button type="submit" className="button">Send</button>
                         </form>
                     </div>
