@@ -36,6 +36,19 @@ function RegisterPage (){
         }
         return newErrors;
     }
+    const Notify = () => {
+        toast.success("Registered Successfully", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            onClose:()=>navigate('/login')
+        });
+    };
 
     const submit = (e)=>{
         e.preventDefault();
@@ -46,21 +59,11 @@ function RegisterPage (){
             axios.post("http://localhost:3001/register",{name,email,phonenumber,password})
         .then(result=>{console.log(result)
             Notify();
-            navigate('/login')
         })
         .catch(error=>console.log(error))   
         }
     }
-    const Notify = () => toast.success("Thank Your. Your Email Send Successfully.", {
-        position: "top-right",
-        autoClose: 4000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "colored",
-        });
+
     return(
         <>
         <div className='main'>
