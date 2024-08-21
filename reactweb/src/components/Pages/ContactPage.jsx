@@ -61,7 +61,6 @@ function ContactPage (){
               console.log("Successfully")
             },
             (error) => {
-                NotifyError();
               console.log('FAILED...', error.text);
             },
           );
@@ -77,18 +76,6 @@ function ContactPage (){
         progress: undefined,
         theme: "colored",
         });
-
-        const NotifyError = () => toast.warn("Your mail not Send.", {
-            position: "top-right",
-            autoClose: 4995,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "colored",
-            transition: Bounce,
-            });
 
     return(
         <>
