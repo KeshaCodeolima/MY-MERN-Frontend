@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import "./LoginAndRegister.css"
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios';
-
+import {ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function LoginPage() {
 
@@ -27,6 +28,33 @@ function LoginPage() {
      return newErrors;
   }
 
+  const Notify = () => {
+    toast.success("Login Successfully", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        onClose:()=>navigate('/')
+    });
+  };
+
+  const NotifyInfo = () => {
+    toast.info("Email OR Password Incorrect", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+    });
+  };
+
   const login = (e)=>{
       e.preventDefault();
       const ValidationErrors = validation();
@@ -37,10 +65,9 @@ function LoginPage() {
       .then(result=>{console.log(result)
         if (result.data === "Succesful Login") {
           console.log(result)
-          alert("Login Successfuly")
-          navigate("/")
+          Notify();
         }else{
-          alert("Email OR Password Incorrect")
+          NotifyInfo();
         }
       })
       .catch(err=>console.log(err)) 
@@ -49,6 +76,7 @@ function LoginPage() {
 
 
   return (
+    <div>
       <div className='box'>
         <div className='main'>
           <h1>Login page</h1>
@@ -73,6 +101,8 @@ function LoginPage() {
           </form>
         </div>
       </div>
+      <ToastContainer/>
+    </div>
   )
 }
 

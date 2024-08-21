@@ -2,6 +2,8 @@ import {useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import "./ContactPage.css";
 import { FaMapLocation,FaPhone,FaEnvelope } from "react-icons/fa6";
+import {ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ContactPage (){
 
@@ -55,15 +57,25 @@ function ContactPage (){
           .sendForm('service_oy4at6h', 'template_xw6se89', form.current,'6B8ivzkQOW-eECsqa')
           .then(
             () => {
-              alert("Thank Your. Your Email send Successfully");
+                Notify();
+              console.log("Successfully")
             },
             (error) => {
-                alert("Your Email is not send.")
               console.log('FAILED...', error.text);
             },
           );
         }
     }
+    const Notify = () => toast.success("Thank Your. Your Email Send Successfully.", {
+        position: "top-right",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
 
     return(
         <>
@@ -111,6 +123,7 @@ function ContactPage (){
                         </form>
                     </div>
                 </div>
+                <ToastContainer />
             </div>
         </div>
         </>

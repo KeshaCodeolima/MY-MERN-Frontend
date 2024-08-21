@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import { useNavigate,Link } from 'react-router-dom';
-
+import {ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function RegisterPage (){
@@ -35,6 +36,19 @@ function RegisterPage (){
         }
         return newErrors;
     }
+    const Notify = () => {
+        toast.success("Registered Successfully", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            onClose:()=>navigate('/login')
+        });
+    };
 
     const submit = (e)=>{
         e.preventDefault();
@@ -44,8 +58,7 @@ function RegisterPage (){
         } else {
             axios.post("http://localhost:3001/register",{name,email,phonenumber,password})
         .then(result=>{console.log(result)
-            alert("Register Succesfully")
-            navigate('/login')
+            Notify();
         })
         .catch(error=>console.log(error))   
         }
@@ -83,6 +96,7 @@ function RegisterPage (){
                 </form>
             </div>
         </div>
+        <ToastContainer/>
         </>
     );
 }
