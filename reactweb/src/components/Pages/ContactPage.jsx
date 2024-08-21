@@ -2,7 +2,7 @@ import {useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import "./ContactPage.css";
 import { FaMapLocation,FaPhone,FaEnvelope } from "react-icons/fa6";
-import { Bounce, ToastContainer, toast } from 'react-toastify';
+import {ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function ContactPage (){
