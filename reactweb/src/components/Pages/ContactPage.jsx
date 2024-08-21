@@ -23,6 +23,11 @@ function ContactPage (){
         if(!formData.user_name){
             newErrors.user_name = "Name is Requied."
         }
+        if(!formData.user_email){
+            newErrors.user_email = "Email is Requied"
+        }else if(!/\S+@\S+\.\S+/.test(emailjs)){
+            newErrors.user_email = "Email is not valid."
+        }
     }
 
     const form = useRef();
