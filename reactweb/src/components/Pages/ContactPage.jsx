@@ -80,18 +80,21 @@ function ContactPage (){
                             placeholder="Full Name" 
                             className="inputsmassage"
                             value={formData.user_name}/>
+                            {error.user_name && <p className='errors'>{error.user_name}</p>}
 
                             <input type="email" 
                             name="user_email" 
                             placeholder="Email" 
                             className="inputsmassage"
                             value={formData.user_email}/>
+                            {error.user_email && <p className='errors'>{error.user_email}</p>}
 
                             <textarea name="message" 
                             placeholder="Write the Message" 
                             className="inputsmassage1"
                             value={formData.message}/>
-                            
+                            {error.message && <p className='errors'>{error.message}</p>}
+
                             <button type="submit" className="button">Send</button>
                         </form>
                     </div>
