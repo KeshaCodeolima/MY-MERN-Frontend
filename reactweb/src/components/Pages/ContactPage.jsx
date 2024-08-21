@@ -28,6 +28,9 @@ function ContactPage (){
         }else if(!/\S+@\S+\.\S+/.test(emailjs)){
             newErrors.user_email = "Email is not valid."
         }
+        if(!formData.message){
+            newErrors.message ="Message is Requied."
+        }
     }
 
     const form = useRef();
