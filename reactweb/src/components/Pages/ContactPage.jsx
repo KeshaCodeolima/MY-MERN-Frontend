@@ -5,7 +5,7 @@ import { FaMapLocation,FaPhone,FaEnvelope } from "react-icons/fa6";
 
 function ContactPage (){
 
-    const [formData,setform]=useState({
+    const [formData,setForm]=useState({
         user_name:'',
         user_email:'',
         message:'',
@@ -17,15 +17,24 @@ function ContactPage (){
         message:'',
     })
 
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setForm({
+          ...formData, // Spread the existing form data
+          [name]: value, // Update the specific field
+        });
+      };
+
     const validation = ()=>{
         const newErrors = {};
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if(!formData.user_name){
             newErrors.user_name = "Name is Requied."
         }
         if(!formData.user_email){
             newErrors.user_email = "Email is Requied"
-        }else if(!/\S+@\S+\.\S+/.test(emailjs)){
+        }else if(! emailRegex.test(formData.user_email)){
             newErrors.user_email = "Email is not valid."
         }
         if(!formData.message){
@@ -79,6 +88,7 @@ function ContactPage (){
                             name="user_name" 
                             placeholder="Full Name" 
                             className="inputsmassage"
+                            onChange={handleInputChange}
                             value={formData.user_name}/>
                             {error.user_name && <p className='errors'>{error.user_name}</p>}
 
@@ -86,12 +96,14 @@ function ContactPage (){
                             name="user_email" 
                             placeholder="Email" 
                             className="inputsmassage"
+                            onChange={handleInputChange}
                             value={formData.user_email}/>
                             {error.user_email && <p className='errors'>{error.user_email}</p>}
 
                             <textarea name="message" 
                             placeholder="Write the Message" 
                             className="inputsmassage1"
+                            onChange={handleInputChange}
                             value={formData.message}/>
                             {error.message && <p className='errors'>{error.message}</p>}
 
