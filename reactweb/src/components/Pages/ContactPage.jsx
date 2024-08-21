@@ -31,13 +31,18 @@ function ContactPage (){
         if(!formData.message){
             newErrors.message ="Message is Requied."
         }
+        return newErrors;
     }
 
     const form = useRef();
 
     const submit= async(e)=>{
         e.preventDefault();
-        emailjs
+        const ValidationErrors = validation();
+        if (Object.keys(ValidationErrors).length > 0) {
+            setError(ValidationErrors)
+        } else {
+            emailjs
           .sendForm('service_oy4at6h', 'template_xw6se89', form.current,'6B8ivzkQOW-eECsqa')
           .then(
             () => {
@@ -48,6 +53,7 @@ function ContactPage (){
               console.log('FAILED...', error.text);
             },
           );
+        }
     }
 
     return(
