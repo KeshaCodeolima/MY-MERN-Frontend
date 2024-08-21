@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import { useNavigate,Link } from 'react-router-dom';
-
+import { Bounce, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function RegisterPage (){
@@ -44,13 +45,22 @@ function RegisterPage (){
         } else {
             axios.post("http://localhost:3001/register",{name,email,phonenumber,password})
         .then(result=>{console.log(result)
-            alert("Register Succesfully")
+            Notify();
             navigate('/login')
         })
         .catch(error=>console.log(error))   
         }
     }
-
+    const Notify = () => toast.success("Thank Your. Your Email Send Successfully.", {
+        position: "top-right",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
     return(
         <>
         <div className='main'>
