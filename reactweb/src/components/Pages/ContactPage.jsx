@@ -1,9 +1,21 @@
-import {useRef } from "react";
+import {useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import "./ContactPage.css";
 import { FaMapLocation,FaPhone,FaEnvelope } from "react-icons/fa6";
 
 function ContactPage (){
+
+    const [formData,setform]=useState({
+        user_name:'',
+        user_email:'',
+        message:'',
+    })
+
+    const[error,setError]=useState({
+        user_name:'',
+        user_email:'',
+        message:'',
+    })
 
     const form = useRef();
 
