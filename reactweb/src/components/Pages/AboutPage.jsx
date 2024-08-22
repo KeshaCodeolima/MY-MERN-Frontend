@@ -1,30 +1,28 @@
-import React from "react";
+import {useState,useEffect} from "react";
 import './AboutPage.css';
-import Image1 from "../../Image/IBG5.jpg";
-import Image2 from "../../Image/IBG6.jpg";
 
 function AboutPage(){
+
+    const images = [
+        require('../../Image/IBG5.jpg'),
+        require('../../Image/IBG6.jpg'),
+        require('../../Image/IBG7.jpg')
+      ];
+
+      const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 6000);
+        return () => clearInterval(interval);
+    }, [images.length]);
+
     return(
         <>
-        <div className="imageslider">
-            <div className="imageslidershow">
-                <input type="radio" name="radio-btn" id="radio1" />
-                <input type="radio" name="radio-btn" id="radio2" />
-                <input type="radio" name="radio-btn" id="radio3" />
-                <input type="radio" name="radio-btn" id="radio4" />
-
-                <div className="Image show">
-                    <img src={Image1} alt=""/>
-                </div>
-                <div className="Image">
-                    <img src={Image2} alt=""/>
-                </div>
-                <div className="navigation-auto">
-                    <div className="auto-btn1"></div>
-                    <div className="auto-btn2"></div>
-                    <div className="auto-btn3"></div>
-                    <div className="auto-btn4"></div>
-                </div>
+        <div className="slider">
+            <div className="boxborder">
+                <img src={images[currentIndex]} alt="slider" className="slider-image" />
             </div>
         </div>
         <div className="abouttext">
