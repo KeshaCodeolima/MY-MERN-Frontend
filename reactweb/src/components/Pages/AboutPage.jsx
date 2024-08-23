@@ -1,15 +1,14 @@
-import {useState,useEffect} from "react";
+import React from "react";
 import './AboutPage.css';
 import { Zoom } from "react-slideshow-image";
 import 'react-slideshow-image/dist/styles.css';
+import Image1 from '../../Image/IBG5.jpg';
+import Image2 from '../../Image/IBG6.jpg';
+import Image3 from '../../Image/IBG7.jpg';
 
 function AboutPage(){
 
-    const images = [
-        require('../../Image/IBG5.jpg'),
-        require('../../Image/IBG6.jpg'),
-        require('../../Image/IBG7.jpg')
-      ];
+    const images = [Image1,Image2,Image3];
 
     return(
         <>
