@@ -1,18 +1,14 @@
 import React from "react";
 import './AboutPage.css';
+import { Zoom } from "react-slideshow-image";
+import 'react-slideshow-image/dist/styles.css';
+import Image1 from '../../Image/IBG5.jpg';
+import Image2 from '../../Image/IBG6.jpg';
+import Image3 from '../../Image/IBG7.jpg';
 
 function AboutPage(){
 
     const images = [Image1,Image2,Image3];
-
-      const [currentIndex, setCurrentIndex] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 6000);
-        return () => clearInterval(interval);
-    }, [images.length]);
 
     return(
         <>
