@@ -10,12 +10,23 @@ function AboutPage(){
 
     const images = [Image1,Image2,Image3];
 
+    const zoomOutProperties = {
+        duration: 6000,
+        transitionDuration: 500,
+        infinite: true,
+        indicators: true,
+        scale: 0.4,
+        arrows: true
+      };
+
     return(
         <>
-        <div className="slider">
-            <div className="boxborder">
-                <img src={images[currentIndex]} alt="slider" className="slider-image" />
-            </div>
+        <div className="slide-container">
+            <Zoom {...zoomOutProperties}>
+                {
+                    images.map((each,index)=><img key={index} style={{width:"100%"}} src={each} alt="Picter"/>)
+                }
+            </Zoom>
         </div>
         <div className="abouttext">
             <div className="aboutboxtext">
