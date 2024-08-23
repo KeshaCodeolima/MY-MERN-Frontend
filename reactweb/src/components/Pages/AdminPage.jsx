@@ -27,6 +27,33 @@ function AdminPage() {
     return newErrors;
   }
 
+  const Notify = () => {
+    toast.success("Login Successfully", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        onClose:()=>navigate('/userdetails')
+    });
+  };
+
+  const NotifyInfo = () => {
+    toast.info("Email OR Password Incorrect", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+    });
+  };
+
   const login = (e)=>{
       e.preventDefault();
       const ValidationsErrors = validation();
