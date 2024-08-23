@@ -15,21 +15,12 @@
     margin-bottom: 30px;
     padding:10px 40px;
 }
-.slider {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-.slider-image {
-    width: 95%;
-    height: 80%;
-    margin-top: 4%;
-    margin-left: 2%;
-    object-fit: cover;
-    transition: opacity 1s ease-in-out;
-    position: absolute;
-    opacity: 1;
+.slide-container {
+    width: 88%;
+    height: 66vh;
+    margin-top: 6%;
+    margin-left: 6%;
+    margin-bottom: 2%;
     border-radius: 20px;
     border: 3px solid white;
 }
