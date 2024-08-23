@@ -55,7 +55,7 @@ function AdminPage() {
     });
   };
   const NotifyInfo1 = () => {
-    toast.info("Email OR Password Incorrect", {
+    toast.warning("Email OR Password Incorrect", {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
