@@ -29,7 +29,7 @@ function AdminPage() {
 
   const Notify = () => {
     toast.success("Login Successfully", {
-        position: "top-right",
+        position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -42,7 +42,7 @@ function AdminPage() {
   };
   const NotifyInfo = () => {
     toast.info("Your Email is Incorrect to Login", {
-        position: "top-right",
+        position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -54,7 +54,7 @@ function AdminPage() {
   };
   const NotifyInfo1 = () => {
     toast.info("Email OR Password Incorrect", {
-        position: "top-right",
+        position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
