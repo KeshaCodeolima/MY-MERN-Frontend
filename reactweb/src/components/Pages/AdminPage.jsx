@@ -27,6 +27,44 @@ function AdminPage() {
     return newErrors;
   }
 
+  const Notify = () => {
+    toast.success("Login Successfully", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        onClose:()=>navigate('/userdetails')
+    });
+  };
+  const NotifyInfo = () => {
+    toast.info("Your Email is Incorrect to Login", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+    });
+  };
+  const NotifyInfo1 = () => {
+    toast.info("Email OR Password Incorrect", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+    });
+  };
+
   const login = (e)=>{
       e.preventDefault();
       const ValidationsErrors = validation();
@@ -38,14 +76,13 @@ function AdminPage() {
       .then(result=>{console.log(result)
 
         if (result.data === "Succesful Login") {
-          alert("Login Succesfully")
-          navigate("/userdetails")
+          Notify();
 
         }else if (result.data === "Invalid Email Input"){
-          alert("Your Email is not valid to Login to the Admin Page.")
+          NotifyInfo()
 
         }else if (result.data === "login Error"){
-          alert("Your Password or Email is not Correct")
+          NotifyInfo1();
         }
       })
       .catch(error=>console.log(error)) 
