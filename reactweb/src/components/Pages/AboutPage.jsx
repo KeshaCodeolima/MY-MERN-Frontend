@@ -1,5 +1,7 @@
 import {useState,useEffect} from "react";
 import './AboutPage.css';
+import { Zoom } from "react-slideshow-image";
+import 'react-slideshow-image/dist/styles.css';
 
 function AboutPage(){
 
@@ -8,15 +10,6 @@ function AboutPage(){
         require('../../Image/IBG6.jpg'),
         require('../../Image/IBG7.jpg')
       ];
-
-      const [currentIndex, setCurrentIndex] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 6000);
-        return () => clearInterval(interval);
-    }, [images.length]);
 
     return(
         <>
