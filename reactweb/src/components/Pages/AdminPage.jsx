@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import "./LoginAndRegister.css"
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios';
+import {ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function AdminPage() {
@@ -89,6 +91,7 @@ function AdminPage() {
       }
   }
   return (
+    <div>
       <div className='box'>
         <div className='main'>
           <h1>Admin page</h1>
@@ -112,6 +115,8 @@ function AdminPage() {
           </form>
         </div>
       </div>
+      <ToastContainer/>
+    </div>
   )
 
 }
