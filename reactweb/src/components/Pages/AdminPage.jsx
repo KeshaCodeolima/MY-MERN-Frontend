@@ -40,9 +40,8 @@ function AdminPage() {
         onClose:()=>navigate('/userdetails')
     });
   };
-
   const NotifyInfo = () => {
-    toast.info("Your Email is Incorrect to Login.", {
+    toast.info("Your Email is Incorrect to Login", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -52,7 +51,7 @@ function AdminPage() {
         progress: undefined,
         theme: "colored",
     });
-
+  };
   const NotifyInfo1 = () => {
     toast.info("Email OR Password Incorrect", {
         position: "top-right",
@@ -80,7 +79,7 @@ function AdminPage() {
           Notify();
 
         }else if (result.data === "Invalid Email Input"){
-          NotifyInfo();
+          NotifyInfo()
 
         }else if (result.data === "login Error"){
           NotifyInfo1();
