@@ -14,8 +14,8 @@ function AboutPage(){
         duration: 6000,
         transitionDuration: 500,
         infinite: true,
-        indicators: true,
-        scale: 0.4,
+        indicators:true,
+        scale: 0.6,
         arrows: true
       };
 
@@ -24,7 +24,7 @@ function AboutPage(){
         <div className="slide-container">
             <Zoom {...zoomOutProperties}>
                 {
-                    images.map((each,index)=><img key={index} style={{width:"100%"}} src={each} alt="Picter"/>)
+                    images.map((each,index)=><img key={index} style={{width:"100%",height:"66vh",borderRadius:"20px"}} src={each} alt="Picter"/>)
                 }
             </Zoom>
         </div>
