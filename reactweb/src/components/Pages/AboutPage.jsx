@@ -14,7 +14,6 @@ function AboutPage(){
         duration: 6000,
         transitionDuration: 500,
         infinite: true,
-        indicators:true,
         scale: 0.6,
         arrows: true
       };
