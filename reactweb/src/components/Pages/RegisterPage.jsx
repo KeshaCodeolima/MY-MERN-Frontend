@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 
 
 
@@ -33,6 +33,7 @@ function RegisterPage (){
                 <input type="password" placeholder='Password' onChange={(e)=>setPassword(e.target.value)}/>
 
                 <button type='submit'>Register</button>
+                <Link to={"/login"} className="span">All Ready Have a Account.(Login)</Link>
                 </form>
             </div>
         </div>

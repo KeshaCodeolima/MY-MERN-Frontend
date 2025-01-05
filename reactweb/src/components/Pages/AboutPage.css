@@ -1,0 +1,26 @@
+.abouttext{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.aboutboxtext{
+    border: 2px solid white;
+    border-radius: 24px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    margin-top: 3px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    padding:10px 40px;
+}
+.slide-container {
+    width: 88%;
+    height: 66vh;
+    margin-top: 6%;
+    margin-left: 6%;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    border: 3px solid white;
+}

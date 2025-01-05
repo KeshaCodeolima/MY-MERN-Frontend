@@ -42,7 +42,6 @@ const exit =()=>{
                         <th>UserName</th>
                         <th>Email</th>
                         <th>Phone Number</th>
-                        <th>Password</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -53,7 +52,6 @@ const exit =()=>{
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
                                 <td>{user.phonenumber}</td>
-                                <td>{user.password}</td>
                                 <td><button className="delet" onClick={()=>deleteUser(user.email)}>DELETE</button> </td>
                             </tr>
                         })

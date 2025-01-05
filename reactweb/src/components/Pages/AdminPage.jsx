@@ -30,7 +30,7 @@ function AdminPage() {
           <form onSubmit={login}>
             <input type="text" placeholder='Admin Email' onChange={(e)=>setEmail(e.target.value)}/>
             <input type="password" placeholder='Admin Password'  onChange={(e)=>setPassword(e.target.value)}/>
-            <Link to={'/forget'}>Forget Password</Link>
+            <Link to={'/forgetemail'}>Forget Password</Link>
             <button type= "submit">Login</button>
           </form>
         </div>

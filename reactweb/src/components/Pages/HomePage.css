@@ -1,0 +1,62 @@
+h1{
+    color: white;
+    font-size: 56px;
+    font-weight:800;
+    padding-top:6%;
+    margin-left: 20px;
+}
+.subimg1{
+    padding-top: 10%;
+    display: flex;
+}
+.IMG{
+    width: 86%;
+    height: 320px;
+    border-radius: 24px;
+    margin-top: 15px;
+    object-fit: cover; 
+}
+.hovertext{
+    position: relative;
+    width: 205%;
+    height: 320px;
+}
+.hovertext2{
+    position: relative;
+    width: 205%;
+    height: 320px;
+}
+.hovertext3{
+    position: relative;
+    width: 205%;
+    height: 320px;
+}
+.hovertext4{
+    position: relative;
+    width: 205%;
+    height: 320px;
+}
+.text1{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 320px;
+    width: 80%;
+    border-radius: 24px;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    transition: .5s ease;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.hovertext:hover .text1{
+    opacity: 1;
+    cursor: pointer;
+}

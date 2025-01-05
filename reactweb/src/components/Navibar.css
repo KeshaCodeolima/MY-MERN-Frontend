@@ -1,11 +1,11 @@
 .header{
-    position: fixed;
+    position:absolute;
     top: 0;
     left: 0;
     background-color:transparent;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(100px);
     width: 100%;
-    padding: 2px; 
+    overflow: hidden; 
 }
 .nav ul{
     display: flex;
@@ -14,18 +14,20 @@
 .nav li{
     list-style: none;
     padding: 0px 20px; 
+    border: none;
 }
 .nav li a{
     color:white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight:600;
     border-radius: 30px;
-    padding: 10px;
+    padding: 6px;
     text-decoration: none;
+    
 }
 .nav li a:hover{
     cursor:pointer;
-    background-color: rgb(129, 201, 252);
+    background: linear-gradient(90deg,rgb(27, 214, 247),rgb(142, 243, 249));
     border-radius: 30px;    
     transition: calc(900ms);
 } 
