@@ -17,6 +17,7 @@ function FooterPage(){
                 <ul>
                     <li>Software Engineer Full Stack Developer</li>
                     <li className="text"> I'm a software engineering undergraduate student in IIT, I specialize in creating clean, efficient code, seamless user experiences that blend cutting-edge technology with user-centric design, I am Passionate for Full Stack Development.</li>
+                    <li className="text"> I'm a software engineering undergraduate student in IIT, I specialize in creating clean, efficient code, seamless user experiences that blend cutting-edge technology with user-centric design, I am Passionate for Full Stack Development.</li>
                     <li><FaFacebook className="Icons"/><FaYoutube className="Icons"/><FaGithub className="Icons"/><FaInstagram className="Icons"/></li>
                 </ul>
             </div>
