@@ -18,7 +18,15 @@
 .slide-container {
     width: 88%;
     height: 66vh;
+<<<<<<< HEAD
+<<<<<<< HEAD
     margin-top: 2%;
+=======
+    margin-top: 6%;
+>>>>>>> 815bfae (fix the image slider sizers)
+=======
+    margin-top: 6%;
+>>>>>>> 0921344d05d950f759e7756cde3e8e0da150c56d
     margin-left: 6%;
     margin-bottom: 2%;
     border-radius: 20px;
